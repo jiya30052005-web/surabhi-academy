@@ -1,0 +1,32 @@
+<section class="section-padding">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-title">Connect With Us</h2>
+            <p class="section-subtitle">Start Your Journey Today</p>
+        </div>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:40px; margin-top:30px;">
+            <div>
+                <form id="enrollmentForm" onsubmit="alert('Thank you for connecting! We will reach out to you shortly.'); return false;" style="display:flex; flex-direction:column; gap:15px;">
+                    <input type="text" placeholder="Your Name" required style="padding:12px; border:1px solid #ddd; border-radius:4px;">
+                    <input type="tel" placeholder="Phone Number" required style="padding:12px; border:1px solid #ddd; border-radius:4px;">
+                    <input type="email" placeholder="Email Address" style="padding:12px; border:1px solid #ddd; border-radius:4px;">
+                    <select required style="padding:12px; border:1px solid #ddd; border-radius:4px;">
+                        <option value="">Select Course of Interest</option>
+                        <option value="boards">High School Foundations (8th-10th)</option>
+                        <option value="jee">IIT-JEE Prep Batch</option>
+                        <option value="neet">NEET Program Group</option>
+                    </select>
+                    <textarea placeholder="Message" rows="5" style="padding:12px; border:1px solid #ddd; border-radius:4px;"></textarea>
+                    <button type="submit" class="btn btn-accent">Submit Request</button>
+                </form>
+            </div>
+            <div>
+                <h3>Our Location</h3>
+                <p style="margin:10px 0 20px;">📍 Reshimbagh, Nagpur, Maharashtra, India</p>
+                <div style="background:#e4e4e4; width:100%; height:280px; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#555;">
+                    [Google Maps Component Display]
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
