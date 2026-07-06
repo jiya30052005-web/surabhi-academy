@@ -1,33 +1,209 @@
-<section class="section-padding">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-title">Our Programs</h2>
-            <p class="section-subtitle">Structured Academic Blueprints</p>
-            <div style="margin-bottom: 40px; display: flex; justify-content: center; gap: 15px;">
-                <button class="btn btn-primary filter-btn active" onclick="filterCourses('all')">Show All</button>
-                <button class="btn btn-outline filter-btn" onclick="filterCourses('school')">School Courses</button>
-                <button class="btn btn-outline filter-btn" onclick="filterCourses('competitive')">Competitive Exams</button>
-            </div>
-        </div>
-        <div class="grid-3">
-            <div class="card course-card" data-category="school">
-                <h3>8th/9th/10th Foundations</h3>
-                <p>Strong base setup focusing on conceptual clarity across Science and Math modules.</p>
-                <span style="display:block; margin: 15px 0; font-weight: bold; color: var(--accent);">Duration: 1 Year Full Course</span>
-                <a href="contact.html" class="btn btn-primary">Enroll Now</a>
-            </div>
-            <div class="card course-card" data-category="competitive">
-                <h3>IIT-JEE Crack Program</h3>
-                <p>Advanced engineering training covering Mains & Advanced question frameworks.</p>
-                <span style="display:block; margin: 15px 0; font-weight: bold; color: var(--accent);">Duration: 2 Year Master Program</span>
-                <a href="contact.html" class="btn btn-primary">Enroll Now</a>
-            </div>
-            <div class="card course-card" data-category="competitive">
-                <h3>NEET Elite Bracket</h3>
-                <p>Deep-dive biology blueprints and intensive physics and chemistry problem solving.</p>
-                <span style="display:block; margin: 15px 0; font-weight: bold; color: var(--accent);">Duration: 2 Year Medical Batch</span>
-                <a href="contact.html" class="btn btn-primary">Enroll Now</a>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses — Class 8th to 12th, JEE, NEET &amp; MHT-CET | Surabhi Academy</title>
+<meta name="description" content="Explore Surabhi Academy's programs for Class 8th–12th, JEE Foundation, JEE/NEET Target Batch and MHT-CET.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"><span style="font-family:'Poppins';font-weight:700;color:var(--green-bright);font-size:1.15rem;">S</span></span>
+      <span class="brand-text">Surabhi Academy<span>Reshimbag, Nagpur</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+919822694137" class="btn btn-outline">Call Now</a>
+      <a href="contact.html" class="btn btn-primary">Enroll Now</a>
     </div>
+  </nav>
+</header>
+
+<section class="hero" style="padding:64px 0;">
+  <div class="container">
+    <div class="eyebrow"><span class="nib"></span> Courses</div>
+    <h1 style="max-width:20ch;">The roadmap to crack IIT-JEE, NEET &amp; MHT-CET in your first attempt.</h1>
+    <p class="lede">A smart strategy today leads to tomorrow's success — pick the program that matches where your child is right now.</p>
+  </div>
 </section>
+
+<section>
+  <div class="container">
+    <div class="grid grid-3">
+
+      <div class="card">
+        <span class="nib"></span>
+        <h3>Class 8th, 9th &amp; 10th</h3>
+        <p style="margin-bottom:14px;">CBSE / State Board</p>
+        <ul class="card-list">
+          <li><span class="nib"></span> Strong foundation for board exams</li>
+          <li><span class="nib"></span> Concept-based learning, not rote</li>
+          <li><span class="nib"></span> Regular tests &amp; assessments</li>
+          <li><span class="nib"></span> Personal attention in small batches</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="nib"></span>
+        <h3>Class 11th — JEE / NEET Foundation</h3>
+        <p style="margin-bottom:14px;">Strong preparation today for a brighter tomorrow</p>
+        <ul class="card-list">
+          <li><span class="nib"></span> Bridge course from school to competitive level</li>
+          <li><span class="nib"></span> NCERT-first approach, then advanced material</li>
+          <li><span class="nib"></span> Doubt-solving sessions built into the week</li>
+          <li><span class="nib"></span> Foundation for both boards and entrance exams</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="nib"></span>
+        <h3>Class 12th — Board + JEE/NEET</h3>
+        <p style="margin-bottom:14px;">The perfect blend of board excellence and entrance prep</p>
+        <ul class="card-list">
+          <li><span class="nib"></span> Balanced focus: boards and competitive exams</li>
+          <li><span class="nib"></span> Full syllabus completion with revision buffer</li>
+          <li><span class="nib"></span> Test series aligned to real exam pattern</li>
+          <li><span class="nib"></span> One-on-one performance reviews</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="nib"></span>
+        <h3>IIT-JEE Target Batch</h3>
+        <p style="margin-bottom:14px;">Focused preparation, higher score, better rank</p>
+        <ul class="card-list">
+          <li><span class="nib"></span> Advanced problem-solving practice</li>
+          <li><span class="nib"></span> Full-length mock tests, JEE pattern</li>
+          <li><span class="nib"></span> Rank-focused strategy sessions</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="nib"></span>
+        <h3>NEET Target Batch</h3>
+        <p style="margin-bottom:14px;">Biology, Physics &amp; Chemistry — built for NEET's pattern</p>
+        <ul class="card-list">
+          <li><span class="nib"></span> NCERT-depth Biology with rapid-recall notes</li>
+          <li><span class="nib"></span> NEET-pattern test series &amp; analysis</li>
+          <li><span class="nib"></span> Revision-first schedule near exam dates</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <span class="nib"></span>
+        <h3>MHT-CET Target Batch</h3>
+        <p style="margin-bottom:14px;">State entrance exam-focused preparation</p>
+        <ul class="card-list">
+          <li><span class="nib"></span> MHT-CET specific question patterns</li>
+          <li><span class="nib"></span> Time-bound practice tests</li>
+          <li><span class="nib"></span> Strategy sessions closer to exam date</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bg-panel-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;"><span class="nib"></span> Why Surabhi Academy</div>
+      <h2>What actually works for toppers.</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card"><span class="nib"></span><h3>Proven Results</h3><p>Consistent results year after year across boards.</p></div>
+      <div class="card"><span class="nib"></span><h3>Expert Faculty</h3><p>Mentorship that goes beyond the classroom.</p></div>
+      <div class="card"><span class="nib"></span><h3>Advanced Test Series</h3><p>Practice built on real exam patterns.</p></div>
+      <div class="card"><span class="nib"></span><h3>Doubt Solving &amp; Support</h3><p>No question left unanswered, no student left behind.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow"><span class="nib"></span> Our Method</div>
+      <h2>6 proven tips we build into every batch.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card"><span class="nib"></span><h3>01 · NCERT First</h3><p>Core concepts begin here — always.</p></div>
+      <div class="card"><span class="nib"></span><h3>02 · Advanced Books</h3><p>Standard prep books, once fundamentals are solid.</p></div>
+      <div class="card"><span class="nib"></span><h3>03 · Revision Routine</h3><p>Weekly review that strengthens memory.</p></div>
+      <div class="card"><span class="nib"></span><h3>04 · Solve Previous Papers</h3><p>Learn from real exam trends, not guesswork.</p></div>
+      <div class="card"><span class="nib"></span><h3>05 · Smart Notes</h3><p>Formula sheets and flashcards for fast recall.</p></div>
+      <div class="card"><span class="nib"></span><h3>06 · Consistency Wins</h3><p>Small daily efforts matter more than last-minute pushes.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <div class="eyebrow" style="justify-content:center;"><span class="nib"></span> 2026–27 Admissions Started</div>
+      <h2>Seats filling fast — enroll today.</h2>
+      <a href="contact.html" class="btn btn-primary">Enroll Now</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark" aria-hidden="true"><span style="font-family:'Poppins';font-weight:700;color:var(--green-bright);font-size:1.15rem;">S</span></span>
+          <span class="brand-text">Surabhi Academy<span>Reshimbag, Nagpur</span></span>
+        </div>
+        <p style="max-width:36ch;">Mentorship, strategy and consistency — turning aspirants into achievers since day one.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://instagram.com/surabhi.academy_nagpur" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919822694137">98226 94137</a></li>
+          <li><a href="tel:+918888824388">88888 24388</a></li>
+          <li>N-152, Near Volleyball Ground,<br>Reshimbag, Nagpur – 440024</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year"></span> Surabhi Academy. All rights reserved.</span>
+      <span>Reshimbag, Nagpur</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,32 +1,193 @@
-<section class="section-padding">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-title">Connect With Us</h2>
-            <p class="section-subtitle">Start Your Journey Today</p>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:40px; margin-top:30px;">
-            <div>
-                <form id="enrollmentForm" onsubmit="alert('Thank you for connecting! We will reach out to you shortly.'); return false;" style="display:flex; flex-direction:column; gap:15px;">
-                    <input type="text" placeholder="Your Name" required style="padding:12px; border:1px solid #ddd; border-radius:4px;">
-                    <input type="tel" placeholder="Phone Number" required style="padding:12px; border:1px solid #ddd; border-radius:4px;">
-                    <input type="email" placeholder="Email Address" style="padding:12px; border:1px solid #ddd; border-radius:4px;">
-                    <select required style="padding:12px; border:1px solid #ddd; border-radius:4px;">
-                        <option value="">Select Course of Interest</option>
-                        <option value="boards">High School Foundations (8th-10th)</option>
-                        <option value="jee">IIT-JEE Prep Batch</option>
-                        <option value="neet">NEET Program Group</option>
-                    </select>
-                    <textarea placeholder="Message" rows="5" style="padding:12px; border:1px solid #ddd; border-radius:4px;"></textarea>
-                    <button type="submit" class="btn btn-accent">Submit Request</button>
-                </form>
-            </div>
-            <div>
-                <h3>Our Location</h3>
-                <p style="margin:10px 0 20px;">📍 Reshimbagh, Nagpur, Maharashtra, India</p>
-                <div style="background:#e4e4e4; width:100%; height:280px; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#555;">
-                    [Google Maps Component Display]
-                </div>
-            </div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Admission Enquiry — Surabhi Academy, Reshimbag Nagpur</title>
+<meta name="description" content="Contact Surabhi Academy for admission enquiries — 98226 94137 / 88888 24388. N-152, Near Volleyball Ground, Reshimbag, Nagpur.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"><span style="font-family:'Poppins';font-weight:700;color:var(--green-bright);font-size:1.15rem;">S</span></span>
+      <span class="brand-text">Surabhi Academy<span>Reshimbag, Nagpur</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+919822694137" class="btn btn-outline">Call Now</a>
+      <a href="contact.html" class="btn btn-primary">Enroll Now</a>
     </div>
+  </nav>
+</header>
+
+<section class="hero" style="padding:64px 0;">
+  <div class="container">
+    <div class="eyebrow"><span class="nib"></span> Admissions Open, 2026–27</div>
+    <h1 style="max-width:18ch;">Let's talk about your child's next big leap.</h1>
+    <p class="lede">Fill the enquiry form and our counsellors will call you back, or reach us directly on the numbers below.</p>
+  </div>
 </section>
+
+<section>
+  <div class="container">
+    <div class="grid grid-2" style="align-items:flex-start;">
+
+      <!-- ============================================================
+           ENQUIRY FORM
+           This works WITHOUT any custom backend/server: it posts to
+           FormSubmit (a free forwarding service) which emails every
+           submission straight to your inbox.
+
+           TO ACTIVATE:
+             1. Replace YOUR_EMAIL_HERE below with your real email.
+             2. Submit the form once for real — FormSubmit sends a
+                confirmation link to that email; click it.
+             3. Done. Every future enquiry lands in your inbox.
+           ============================================================ -->
+      <div class="form-panel">
+        <h2 style="margin-bottom:6px;">Admission Enquiry</h2>
+        <p style="margin-bottom:24px;">Tell us a bit about your child and we'll get in touch within 24 hours.</p>
+
+        <form class="js-contact-form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+          <!-- FormSubmit settings: no captcha popup, subject line, redirect message -->
+          <input type="hidden" name="_subject" value="New admission enquiry — Surabhi Academy website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Parent / Student Name</label>
+              <input type="text" id="name" name="name" placeholder="Full name" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="class">Current Class</label>
+              <select id="class" name="class">
+                <option>Class 8th</option>
+                <option>Class 9th</option>
+                <option>Class 10th</option>
+                <option>Class 11th</option>
+                <option>Class 12th</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="course">Interested In</label>
+              <select id="course" name="course">
+                <option>JEE Foundation</option>
+                <option>IIT-JEE Target Batch</option>
+                <option>NEET Target Batch</option>
+                <option>MHT-CET Target Batch</option>
+                <option>School Board Coaching</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message (optional)</label>
+            <textarea id="message" name="message" placeholder="Any specific questions for our counsellors?"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">Send Enquiry</button>
+          <p class="form-msg"></p>
+        </form>
+
+        <!-- ============================================================
+             ALTERNATIVE: Google Form
+             If you'd rather collect enquiries in a Google Form /
+             Google Sheet instead of email, delete the <form> block
+             above and uncomment the iframe below, replacing
+             YOUR_GOOGLE_FORM_EMBED_URL with your form's real embed
+             link (Google Form → Send → Embed <> → copy the src URL).
+             ============================================================
+        <iframe src="YOUR_GOOGLE_FORM_EMBED_URL" width="100%" height="700" frameborder="0" style="border-radius:8px;">Loading…</iframe>
+        -->
+      </div>
+
+      <!-- CONTACT DETAILS -->
+      <div>
+        <div class="panel" style="margin-bottom:24px;">
+          <h2 style="margin-bottom:20px;">Reach Us Directly</h2>
+          <ul class="contact-info">
+            <li><span class="nib"></span><div><b>Call / WhatsApp</b><span><a href="tel:+919822694137">98226 94137</a> &nbsp;·&nbsp; <a href="tel:+918888824388">88888 24388</a></span></div></li>
+            <li><span class="nib"></span><div><b>Address</b><span>N-152, Near Volleyball Ground, Reshimbag, Nagpur – 440024</span></div></li>
+            <li><span class="nib"></span><div><b>Instagram</b><span><a href="https://instagram.com/surabhi.academy_nagpur" target="_blank" rel="noopener">@surabhi.academy_nagpur</a></span></div></li>
+          </ul>
+        </div>
+
+        <div class="img-placeholder" style="min-height:260px;">
+          <span class="nib"></span>
+          <strong>Google Map</strong>
+          <small>Paste your Google Maps "Embed a map" &lt;iframe&gt; code here once you have the exact map link for N-152, Reshimbag.</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark" aria-hidden="true"><span style="font-family:'Poppins';font-weight:700;color:var(--green-bright);font-size:1.15rem;">S</span></span>
+          <span class="brand-text">Surabhi Academy<span>Reshimbag, Nagpur</span></span>
+        </div>
+        <p style="max-width:36ch;">Mentorship, strategy and consistency — turning aspirants into achievers since day one.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://instagram.com/surabhi.academy_nagpur" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919822694137">98226 94137</a></li>
+          <li><a href="tel:+918888824388">88888 24388</a></li>
+          <li>N-152, Near Volleyball Ground,<br>Reshimbag, Nagpur – 440024</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year"></span> Surabhi Academy. All rights reserved.</span>
+      <span>Reshimbag, Nagpur</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

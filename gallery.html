@@ -1,14 +1,117 @@
-<section class="section-padding">
-    <div class="container">
-        <div class="text-center">
-            <h2 class="section-title">Academy Gallery</h2>
-            <p class="section-subtitle">Life At Surabhi Academy</p>
-        </div>
-        <div style="display:grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap:15px; margin-top:30px;">
-            <div style="background:#eee; aspect-ratio:1; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#666;">Classroom Layout</div>
-            <div style="background:#eee; aspect-ratio:1; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#666;">Doubt Sessions</div>
-            <div style="background:#eee; aspect-ratio:1; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#666;">Topper Celebration</div>
-            <div style="background:#eee; aspect-ratio:1; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#666;">Interactive Seminars</div>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Surabhi Academy, Reshimbag Nagpur</title>
+<meta name="description" content="Photos from classes, events and student life at Surabhi Academy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark" aria-hidden="true"><span style="font-family:'Poppins';font-weight:700;color:var(--green-bright);font-size:1.15rem;">S</span></span>
+      <span class="brand-text">Surabhi Academy<span>Reshimbag, Nagpur</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="faculty.html">Faculty</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:+919822694137" class="btn btn-outline">Call Now</a>
+      <a href="contact.html" class="btn btn-primary">Enroll Now</a>
     </div>
+  </nav>
+</header>
+
+<section class="hero" style="padding:64px 0;">
+  <div class="container">
+    <div class="eyebrow"><span class="nib"></span> Gallery</div>
+    <h1 style="max-width:18ch;">A look inside our classrooms.</h1>
+    <p class="lede">Photos from lectures, doubt-solving sessions, tests and celebrations — this page is ready for your real photos whenever they're available.</p>
+  </div>
 </section>
+
+<section>
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-1.jpg</small></div>
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-2.jpg</small></div>
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-3.jpg</small></div>
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-4.jpg</small></div>
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-5.jpg</small></div>
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-6.jpg</small></div>
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-7.jpg</small></div>
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-8.jpg</small></div>
+      <div class="img-placeholder"><span class="nib"></span><small>images/gallery-9.jpg</small></div>
+    </div>
+    <p class="note" style="margin-top:24px;">To add a real photo: drop the file into the <code>images/</code> folder, then replace the matching <code>&lt;div class="img-placeholder"&gt;</code> block with <code>&lt;img src="images/gallery-1.jpg" alt="..."&gt;</code>.</p>
+  </div>
+</section>
+
+<section style="background:var(--bg-panel-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="cta-band" style="background:transparent; border:none; padding:0;">
+      <h2>Follow us for daily study tips</h2>
+      <p>See more classroom moments and exam strategy posts on our Instagram.</p>
+      <a href="https://instagram.com/surabhi.academy_nagpur" target="_blank" rel="noopener" class="btn btn-outline">@surabhi.academy_nagpur</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark" aria-hidden="true"><span style="font-family:'Poppins';font-weight:700;color:var(--green-bright);font-size:1.15rem;">S</span></span>
+          <span class="brand-text">Surabhi Academy<span>Reshimbag, Nagpur</span></span>
+        </div>
+        <p style="max-width:36ch;">Mentorship, strategy and consistency — turning aspirants into achievers since day one.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="results.html">Results</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://instagram.com/surabhi.academy_nagpur" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+919822694137">98226 94137</a></li>
+          <li><a href="tel:+918888824388">88888 24388</a></li>
+          <li>N-152, Near Volleyball Ground,<br>Reshimbag, Nagpur – 440024</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year"></span> Surabhi Academy. All rights reserved.</span>
+      <span>Reshimbag, Nagpur</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
